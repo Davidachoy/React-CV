@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 export const HeaderNav = () => {
   return (
-    <header>
+    <header className='header'>
         <div className="logo">
             <h1>{"</"}David Achoy{">"}</h1>
         </div>

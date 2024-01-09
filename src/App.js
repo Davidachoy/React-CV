@@ -1,11 +1,10 @@
-import './App.css';
 import { Rute } from './router/Rute';
 
 function App() {
   return (
-    <>
+    <div className='root'>
       <Rute />
-    </>
+    </div>
   );
 }
 

@@ -13,7 +13,6 @@ export const Rute = () => {
     return (
         <BrowserRouter>
             <HeaderNav/>
-            <hr/>
             <Routes>
                 <Route  path="/" element={<Home/>} />
                 <Route  path="/services" element={<Services/>} />
