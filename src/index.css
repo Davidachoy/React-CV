@@ -51,8 +51,8 @@ code {
   color: #000;
   transition: all 300ms;
 }
-
-.header li a:hover {
+.header .active-link, 
+.header a:hover {
   color: #fa4529;
 }
 
@@ -82,3 +82,25 @@ code {
     margin-bottom: 10px; /* Opcional: agrega espacio entre los elementos de la lista */
   }
 }
+
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  text-align: center;
+  border-top: #000 2px solid;
+  background-color: #d8d8d8;
+  color: #878787;
+  margin-top: 25px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+

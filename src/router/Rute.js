@@ -1,6 +1,6 @@
 //simple route
 import React from 'react';
-import { BrowserRouter, Route, Switch, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home } from '../components/Home';
 import { Services } from '../components/Services';
 import { Portfolio } from '../components/Portfolio';
@@ -13,14 +13,15 @@ export const Rute = () => {
     return (
         <BrowserRouter>
             <HeaderNav/>
-            <Routes>
-                <Route  path="/" element={<Home/>} />
-                <Route  path="/services" element={<Services/>} />
-                <Route  path="/portfolio" element={<Portfolio/>} />
-                <Route  path="/curriculum" element={<Curriculum/>} />
-                <Route  path="/contact" element={<Contact/>} />
-            </Routes>
-            <hr/>
+            <section className="container">
+                <Routes>
+                    <Route  path="/" element={<Home/>} />
+                    <Route  path="/services" element={<Services/>} />
+                    <Route  path="/portfolio" element={<Portfolio/>} />
+                    <Route  path="/curriculum" element={<Curriculum/>} />
+                    <Route  path="/contact" element={<Contact/>} />
+                </Routes>
+            </section>  
             <Footer/>
         </BrowserRouter>
     );
